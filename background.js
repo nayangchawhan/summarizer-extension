@@ -17,7 +17,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 });
 
 async function summarizeSelectedText(selectedText) {
-  const API_KEY = 'AIzaSyAF-6qGghCA1Iu6_ZLNRbS5WXWj0OSy7ZA'; // Replace with your Gemini or OpenAI API key
+  const API_KEY = 'YOUR API KEY'; // Replace with your Gemini or OpenAI API key
   const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=' + API_KEY, {
     method: 'POST',
     headers: { "Content-Type": "application/json" },
